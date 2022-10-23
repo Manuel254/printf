@@ -60,5 +60,5 @@ int _printf(const char *format, ...)
 	va_end(arg);
 	write(1, buffer, strlen(buffer));
 
-	return (strlen(buffer));
+	return ((strlen(buffer) - 1));
 }
